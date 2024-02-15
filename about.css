@@ -1,0 +1,106 @@
+section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    height: 80vh;
+    color: white;
+}
+
+h1 {
+    display: inline-block;
+    color: rgb(206, 178, 22);
+    border-left: 5px solid rgb(206, 178, 22);
+    padding-left: 5px;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+section .profile {
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0px 20px 3px rgb(206, 178, 22);
+}
+
+section .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section .profile:hover{
+    transform: scale(1.2);
+}
+
+section .introduction{
+    width: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .introduction p{
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+section .introduction p span{
+    color: rgb(230, 198, 14);
+}
+
+section .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section article .info p span{
+    color: rgb(206, 178, 22);
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px){
+    section .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    section .profile{
+        height: 200px;
+        width: 200px;
+    }
+
+    h1{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    section .introduction{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    section .profile{
+        height: 200px;
+        width: 200px;
+    }
+
+    h1{
+        margin-bottom: 15px;
+        margin-left: 80px;
+        font-size: 25px;
+    }
+
+    section .introduction{
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,204 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 100vh;
+    padding: 0 40px;
+}
+article{
+    display: flex;
+    gap: 40px;
+}
+
+.profile {
+    height: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0px 20px 3px rgb(206, 178, 22);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+}
+
+.social-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.facebook {
+    background-color: #3b5998;
+    background-image: url('home/Icons/facebook.png'); 
+}
+.discord {
+    background-color: #7289da;
+    background-image: url('home/Icons/discord.png'); 
+}
+.github {
+    background-color: #28a745;
+    background-image: url('home/Icons/github.png'); 
+}
+.linkedin {
+    background-color: #0077B5;
+    background-image: url('home/Icons/linkedin.png'); 
+}
+.tiktok {
+    background-color: #FF0066;
+    background-image: url('home/Icons/tiktok.png'); 
+}
+.instagram {
+    background-color: #e4405f;
+    background-image: url('home/Icons/instagram.png'); 
+}
+
+.social-button:hover {
+    transform: scale(1.2);
+}
+
+p{
+    font-size: 70px;
+    color: White;
+    margin-bottom: 0;
+}
+div .intro{
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+span{
+    color: rgb(206, 178, 22);
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing-span 2s steps(50) infinite; 
+}
+
+@keyframes typing-span {
+    from {
+        width: 0;
+    }
+    to {
+        width: 110%;
+    }
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    padding: 15px 30px;
+    background-color: transparent;
+    color:   rgb(206, 178, 22);
+    font-size: 17px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+
+    box-shadow: 0 0px 10px 5px rgb(206, 178, 22);
+}
+
+@media screen and (max-width: 480px){
+    #home, article{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    #home{
+        height: auto;
+        gap: 20px;
+    }
+    #home .profile{
+        width: 100px;
+        height: 100px;
+    }
+
+    article div p{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    span{
+        color: rgb(206, 178, 22);
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing-span 2s steps(50) infinite; 
+    }
+    article div .intro {
+        width: 100%;
+    }
+    article button {
+        padding: 5px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .social-buttons{
+        flex-direction: row;
+        padding-top: 10px;
+    }
+    .social-button{
+        height: 40px;
+        width: 40px;
+    }
+    button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #home{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #home .profile{
+        width: 150px;
+        height: 150px;
+    }
+
+    article div p{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    article .intro{
+        width: 100%;
+    }
+
+    article button {
+        padding: 5px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .social-buttons{
+        flex-direction: row;
+        padding-top: 10px;
+    }
+    .social-button{
+        height: 40px;
+        width: 40px;
+    }
+    .buttons{
+        margin-top: 10px;
+    }
+    article button{
+        font-size: 18px;
+        padding: 10px;
+
+        box-shadow: 0 0px 10px 2px rgb(206, 178, 22);
+    }
+}
+

@@ -1,0 +1,16 @@
+#project{
+    padding-top: 50px;
+    color: rgb(206, 178, 22);
+    height: 80vh;
+}
+
+h1 {    
+    display: inline-block;
+    color: rgb(206, 178, 22);
+    border-left: 5px solid rgb(206, 178, 22);
+    padding-left: 5px;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
